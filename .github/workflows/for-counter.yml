@@ -1,4 +1,4 @@
-name: Count 'for' in code changes
+name: No. of for in code changes
 
 on:
   push:
@@ -9,14 +9,6 @@ jobs:
   count-for:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-      - name: Count 'for' in code changes
+      - name: NO. of 'for'
         run: |
           python .github/scripts/count_for.py
